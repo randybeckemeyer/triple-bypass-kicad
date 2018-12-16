@@ -508,7 +508,7 @@ Wire Wire Line
 Wire Wire Line
 	1700 2950 1900 2950
 $Comp
-L ths7374ipwr:THS7374IPWR U2
+L triple-bypass-rescue:THS7374IPWR-ths7374ipwr U2
 U 1 1 5C1707BA
 P 5150 2850
 F 0 "U2" H 5550 3239 60  0000 C CNN

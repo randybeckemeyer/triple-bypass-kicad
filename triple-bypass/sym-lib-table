@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name triple-bypass-rescue)(type Legacy)(uri ${KIPRJMOD}/triple-bypass-rescue.lib)(options "")(descr ""))
+)

@@ -423,7 +423,7 @@ Wire Wire Line
 Wire Wire Line
 	3200 4400 4100 4400
 $Comp
-L MD-90SM:MD-90SM J1
+L triple-bypass-rescue:MD-90SM-MD-90SM J1
 U 1 1 5C1617D3
 P 8000 2800
 F 0 "J1" H 7850 3500 50  0000 L CNN
