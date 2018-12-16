@@ -4,18 +4,16 @@ The Triple Bypass is an audio/video mod board designed for Sega Genesis/Megadriv
 http://www.sega-16.com/forum/showthread.php?31989-Take-your-Genesis-audio-to-the-next-level-The-Mega-Amp-2-0-is-here!
 
 # Confirmed Working
-The current version (0.3) has been confirmed to work properly by several people. Build with confidence!
+The schematic circuits are the same as db-electronics version 0.3. The schematic and layout are redrawn with as many generic library parts as possible. Also it was drawn in KiCad version 5.0.1.
 
 # Install Instructions
 Coming soon!
 
-# 3 BOM Variants
-There are 3 BOM variants to accomodate the 3 different versions of the Mega Amp 2.0:
+# Uses Solder Jumpers instead of different Bill of Materials
+The board is designed to be fully populated with one BOM. There are solder jumpers for attenuation resistors and to choose which sound chip your system contains.
 * YM2612
 * ASIC YM3438
 * GOAC YM3438
-
-The original release had a mistake in the BOM where R116 was identified as 1.30k instead of 2.20k. Fortunately this mistake has ZERO noticeable effects on circuit performace. I have since corrected the issue in the BOMs. Thanks to FirebrandX for finding this mistake.
 
 # PCB Finish
 There are no special requirements for the finish of this PCB - a 1.6mm PCB with HASL finish is perfectly acceptable for this PCB.
