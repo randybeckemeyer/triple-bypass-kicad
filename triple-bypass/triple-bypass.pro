@@ -1,4 +1,4 @@
-update=Tue 07 Aug 2018 11:04:06 AM EDT
+update=12/16/2018 7:58:20 AM
 version=1
 last_client=kicad
 [pcbnew]
@@ -23,27 +23,18 @@ ModuleOutlineThickness=0.150000000000
 [cvpcb]
 version=1
 NetIExt=net
-[eeschema]
-version=1
-LibDir=/home/rene/Git/KiCad/kicadlib
-[eeschema/libraries]
-LibName1=/home/rene/Git/KiCad/kicadlib/db-connectors
-LibName2=/home/rene/Git/KiCad/kicadlib/db-diodes
-LibName3=/home/rene/Git/KiCad/kicadlib/db-memory
-LibName4=/home/rene/Git/KiCad/kicadlib/db-sem
-LibName5=/home/rene/Git/KiCad/kicadlib/db-transistors
-LibName6=db-passives
-LibName7=/home/rene/Git/KiCad/kicadlib/db-vgparts
-LibName8=power
 [general]
 version=1
+[eeschema]
+version=1
+LibDir=
 [schematic_editor]
 version=1
 PageLayoutDescrFile=
-PlotDirectoryName=
+PlotDirectoryName=./
 SubpartIdSeparator=0
 SubpartFirstId=65
 NetFmtName=Pcbnew
-SpiceForceRefPrefix=0
-SpiceUseNetNumbers=0
+SpiceAjustPassiveValues=0
 LabSize=60
+ERC_TestSimilarLabels=1

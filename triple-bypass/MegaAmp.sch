@@ -1,0 +1,1229 @@
+EESchema Schematic File Version 4
+LIBS:triple-bypass-cache
+EELAYER 26 0
+EELAYER END
+$Descr A 11000 8500
+encoding utf-8
+Sheet 2 3
+Title "Triple Bypass"
+Date "2018-12-16"
+Rev "0.4"
+Comp ""
+Comment1 "https://github.com/randybeckemeyer/triple-bypass-kicad"
+Comment2 "Licensed under CERN OHL v.1.2"
+Comment3 "For all Genesis consoles"
+Comment4 ""
+$EndDescr
+$Comp
+L Amplifier_Operational:LMV358 U1
+U 2 1 5C0F1990
+P 7550 3750
+F 0 "U1" H 7600 3500 60  0000 C CNN
+F 1 "LMV358M8G-13" H 7750 4000 60  0000 C CNN
+F 2 "Package_SO:TSSOP-8_3x3mm_P0.65mm" H 7825 4275 60  0001 C CNN
+F 3 "https://www.diodes.com/assets/Datasheets/LMV321_358.pdf" H 8650 4200 60  0001 C CNN
+F 4 "LMV358M8G-13DITR-ND" H 7900 4000 60  0001 C CNN "Digikey"
+F 5 "IC OPAMP GP 1MHZ RRO 8MSOP" H 8000 4100 60  0001 C CNN "Description"
+	2    7550 3750
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:R R25
+U 1 1 5C0F1999
+P 8500 3750
+F 0 "R25" V 8600 3750 50  0000 C CNN
+F 1 "332R" V 8400 3750 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 8430 3750 30  0001 C CNN
+F 3 "" H 8500 3750 30  0000 C CNN
+F 4 "P332HCT-ND" V 8500 3750 60  0001 C CNN "Digikey"
+F 5 "RES 332 OHM 1/10W 1% 0603 SMD" V 8500 3750 60  0001 C CNN "Description"
+	1    8500 3750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R26
+U 1 1 5C0F19A2
+P 8500 5350
+F 0 "R26" V 8600 5350 50  0000 C CNN
+F 1 "332R" V 8400 5350 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 8430 5350 30  0001 C CNN
+F 3 "" H 8500 5350 30  0000 C CNN
+F 4 "P332HCT-ND" V 8500 5350 60  0001 C CNN "Digikey"
+F 5 "RES 332 OHM 1/10W 1% 0603 SMD" V 8500 5350 60  0001 C CNN "Description"
+	1    8500 5350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R21
+U 1 1 5C0F19AB
+P 7600 3200
+F 0 "R21" V 7700 3200 50  0000 C CNN
+F 1 "240K" V 7500 3200 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 7530 3200 30  0001 C CNN
+F 3 "" H 7600 3200 30  0000 C CNN
+F 4 "P240KHCT-ND" V 7600 3200 60  0001 C CNN "Digikey"
+F 5 "RES 240K OHM 1/10W 1% 0603 SMD" V 7600 3200 60  0001 C CNN "Description"
+	1    7600 3200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R22
+U 1 1 5C0F19B4
+P 7650 4800
+F 0 "R22" V 7750 4800 50  0000 C CNN
+F 1 "240K" V 7550 4800 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 7580 4800 30  0001 C CNN
+F 3 "" H 7650 4800 30  0000 C CNN
+F 4 "P240KHCT-ND" V 7650 4800 60  0001 C CNN "Digikey"
+F 5 "RES 240K OHM 1/10W 1% 0603 SMD" V 7650 4800 60  0001 C CNN "Description"
+	1    7650 4800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:CP C14
+U 1 1 5C0F19BD
+P 9100 3750
+F 0 "C14" V 9250 3750 50  0000 C CNN
+F 1 "22uF/10V" V 8950 3750 50  0000 C CNN
+F 2 "Capacitor_Tantalum_SMD:CP_EIA-3216-18_Kemet-A_Pad1.58x1.35mm_HandSolder" H 9400 3600 30  0001 C CNN
+F 3 "" H 9230 3800 60  0000 C CNN
+F 4 "478-1663-1-ND" H 9330 3900 60  0001 C CNN "Digikey"
+F 5 "CAP TANT 22UF 10V 10% 1206" H 9325 4000 60  0001 C CNN "Description"
+	1    9100 3750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:CP C15
+U 1 1 5C0F19C6
+P 9100 5350
+F 0 "C15" V 9250 5350 50  0000 C CNN
+F 1 "22uF/10V" V 8950 5350 50  0000 C CNN
+F 2 "Capacitor_Tantalum_SMD:CP_EIA-3216-18_Kemet-A_Pad1.58x1.35mm_HandSolder" H 9400 5200 30  0001 C CNN
+F 3 "" H 9230 5400 60  0000 C CNN
+F 4 "478-1663-1-ND" H 9330 5500 60  0001 C CNN "Digikey"
+F 5 "CAP TANT 22UF 10V 10% 1206" H 9325 5600 60  0001 C CNN "Description"
+	1    9100 5350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C C10
+U 1 1 5C0F19CF
+P 7600 2800
+F 0 "C10" V 7750 2800 50  0000 C CNN
+F 1 "180pF/50V" V 7450 2800 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 7638 2650 30  0001 C CNN
+F 3 "" H 7600 2800 60  0000 C CNN
+F 4 "311-4096-6-ND" H 7600 2800 60  0001 C CNN "Digikey"
+F 5 "CAP CER 180PF 50V X7R 0603" H 7600 2800 60  0001 C CNN "Description"
+	1    7600 2800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C C11
+U 1 1 5C0F19D8
+P 7650 4400
+F 0 "C11" V 7800 4400 50  0000 C CNN
+F 1 "180pF/50V" V 7500 4400 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 7688 4250 30  0001 C CNN
+F 3 "" H 7650 4400 60  0000 C CNN
+F 4 "311-4096-6-ND" H 7650 4400 60  0001 C CNN "Digikey"
+F 5 "CAP CER 180PF 50V X7R 0603" H 7650 4400 60  0001 C CNN "Description"
+	1    7650 4400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5C0F19E3
+P 1950 1150
+F 0 "R1" V 1850 1150 50  0000 C CNN
+F 1 "2K2" V 2050 1150 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 1880 1150 30  0001 C CNN
+F 3 "" H 1950 1150 30  0000 C CNN
+F 4 "P2.20KHCT-ND" V 1950 1150 60  0001 C CNN "Digikey"
+F 5 "RES 2.20k OHM 1/10W 1% 0603 SMD" V 1950 1150 60  0001 C CNN "Description"
+	1    1950 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 5C0F19EC
+P 1950 3150
+F 0 "R3" V 1850 3150 50  0000 C CNN
+F 1 "75R" V 2050 3150 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 1880 3150 30  0001 C CNN
+F 3 "" H 1950 3150 30  0000 C CNN
+F 4 "P75.0HCT-ND" V 1950 3150 60  0001 C CNN "Digikey"
+F 5 "RES 75.0 OHM 1/10W 1% 0603 SMD" V 1950 3150 60  0001 C CNN "Description"
+	1    1950 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R5
+U 1 1 5C0F19F5
+P 1950 5150
+F 0 "R5" V 1850 5150 50  0000 C CNN
+F 1 "75R" V 2050 5150 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 1880 5150 30  0001 C CNN
+F 3 "" H 1950 5150 30  0000 C CNN
+F 4 "P75.0HCT-ND" V 1950 5150 60  0001 C CNN "Digikey"
+F 5 "RES 75.0 OHM 1/10W 1% 0603 SMD" V 1950 5150 60  0001 C CNN "Description"
+	1    1950 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R15
+U 1 1 5C0F19FE
+P 5050 4650
+F 0 "R15" V 4950 4650 50  0000 C CNN
+F 1 "2K2" V 5150 4650 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 4980 4650 30  0001 C CNN
+F 3 "" H 5050 4650 30  0000 C CNN
+F 4 "P2.20KHCT-ND" V 5050 4650 60  0001 C CNN "Digikey"
+F 5 "RES 2.20k OHM 1/10W 1% 0603 SMD" V 5050 4650 60  0001 C CNN "Description"
+	1    5050 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R7
+U 1 1 5C0F1A07
+P 3150 2950
+F 0 "R7" V 3250 2950 50  0000 C CNN
+F 1 "130K" V 3050 2950 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3080 2950 30  0001 C CNN
+F 3 "" H 3150 2950 30  0000 C CNN
+F 4 "P130KHCT-ND" V 3150 2950 60  0001 C CNN "Digikey"
+F 5 "RES 130K OHM 1/10W 1% 0603 SMD" V 3150 2950 60  0001 C CNN "Description"
+	1    3150 2950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R19
+U 1 1 5C0F1A10
+P 6100 4150
+F 0 "R19" V 6200 4150 50  0000 C CNN
+F 1 "120K" V 6000 4150 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 6030 4150 30  0001 C CNN
+F 3 "" H 6100 4150 30  0000 C CNN
+F 4 "P120KHCT-ND" V 6100 4150 60  0001 C CNN "Digikey"
+F 5 "RES 120K OHM 1/10W 1% 0603 SMD" V 6100 4150 60  0001 C CNN "Description"
+	1    6100 4150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R11
+U 1 1 5C0F1A19
+P 3500 1500
+F 0 "R11" V 3400 1500 50  0000 C CNN
+F 1 "6K19" V 3600 1500 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3430 1500 30  0001 C CNN
+F 3 "" H 3500 1500 30  0000 C CNN
+F 4 "P6.19KHCT-ND" V 3500 1500 60  0001 C CNN "Digikey"
+F 5 "RES 6.19K OHM 1/10W 1% 0603 SMD" V 3500 1500 60  0001 C CNN "Description"
+	1    3500 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R9
+U 1 1 5C0F1A22
+P 3150 4950
+F 0 "R9" V 3250 4950 50  0000 C CNN
+F 1 "130K" V 3050 4950 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3080 4950 30  0001 C CNN
+F 3 "" H 3150 4950 30  0000 C CNN
+F 4 "P130KHCT-ND" V 3150 4950 60  0001 C CNN "Digikey"
+F 5 "RES 130K OHM 1/10W 1% 0603 SMD" V 3150 4950 60  0001 C CNN "Description"
+	1    3150 4950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 5C0F1A2B
+P 2600 950
+F 0 "C1" V 2450 950 50  0000 C CNN
+F 1 "10uF/10V" V 2750 950 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 2638 800 30  0001 C CNN
+F 3 "" H 2625 1050 60  0000 C CNN
+F 4 "478-10766-1-ND" H 2725 1150 60  0001 C CNN "Digikey"
+F 5 "CAP CER 10UF 10V X5R 0603" H 2725 1250 60  0001 C CNN "Description"
+	1    2600 950 
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C3
+U 1 1 5C0F1A34
+P 2600 2950
+F 0 "C3" V 2750 2950 50  0000 C CNN
+F 1 "1uF/16V" V 2450 2950 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 2638 2800 30  0001 C CNN
+F 3 "" H 2600 2950 60  0000 C CNN
+F 4 "445-1416-1-ND" H 2600 2950 60  0001 C CNN "Digikey"
+F 5 "CAP CER 1UF 16V X5R 0603" H 2600 2950 60  0001 C CNN "Description"
+	1    2600 2950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C C5
+U 1 1 5C0F1A3D
+P 2600 4950
+F 0 "C5" V 2750 4950 50  0000 C CNN
+F 1 "1uF/16V" V 2450 4950 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 2638 4800 30  0001 C CNN
+F 3 "" H 2600 4950 60  0000 C CNN
+F 4 "445-1416-1-ND" H 2600 4950 60  0001 C CNN "Digikey"
+F 5 "CAP CER 1UF 16V X5R 0603" H 2600 4950 60  0001 C CNN "Description"
+	1    2600 4950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C C8
+U 1 1 5C0F1A46
+P 5550 4150
+F 0 "C8" V 5700 4150 50  0000 C CNN
+F 1 "1uF/16V" V 5400 4150 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5588 4000 30  0001 C CNN
+F 3 "" H 5550 4150 60  0000 C CNN
+F 4 "445-1416-1-ND" H 5550 4150 60  0001 C CNN "Digikey"
+F 5 "CAP CER 1UF 16V X5R 0603" H 5550 4150 60  0001 C CNN "Description"
+	1    5550 4150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R23
+U 1 1 5C0F1A4F
+P 7700 1350
+F 0 "R23" V 7600 1350 50  0000 C CNN
+F 1 "10K" V 7800 1350 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 7630 1350 30  0001 C CNN
+F 3 "" H 7700 1350 30  0000 C CNN
+F 4 "P10.0KHCT-ND" V 7700 1350 60  0001 C CNN "Digikey"
+F 5 "RES 10.0K OHM 1/10W 1% 0603 SMD" V 7700 1350 60  0001 C CNN "Description"
+	1    7700 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR015
+U 1 1 5C0F1A56
+P 7700 1100
+F 0 "#PWR015" H 7700 950 50  0001 C CNN
+F 1 "+5V" H 7700 1240 50  0000 C CNN
+F 2 "" H 7700 1100 50  0001 C CNN
+F 3 "" H 7700 1100 50  0001 C CNN
+	1    7700 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR016
+U 1 1 5C0F1A5C
+P 7700 2150
+F 0 "#PWR016" H 7700 1900 50  0001 C CNN
+F 1 "GND" H 7700 2000 50  0000 C CNN
+F 2 "" H 7700 2150 50  0001 C CNN
+F 3 "" H 7700 2150 50  0001 C CNN
+	1    7700 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R20
+U 1 1 5C0F1A64
+P 6100 4650
+F 0 "R20" V 6200 4650 50  0000 C CNN
+F 1 "120K" V 6000 4650 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 6030 4650 30  0001 C CNN
+F 3 "" H 6100 4650 30  0000 C CNN
+F 4 "P120KHCT-ND" V 6100 4650 60  0001 C CNN "Digikey"
+F 5 "RES 120K OHM 1/10W 1% 0603 SMD" V 6100 4650 60  0001 C CNN "Description"
+	1    6100 4650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C C9
+U 1 1 5C0F1A6D
+P 5550 4650
+F 0 "C9" V 5700 4650 50  0000 C CNN
+F 1 "1uF/16V" V 5400 4650 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5588 4500 30  0001 C CNN
+F 3 "" H 5550 4650 60  0000 C CNN
+F 4 "445-1416-1-ND" H 5550 4650 60  0001 C CNN "Digikey"
+F 5 "CAP CER 1UF 16V X5R 0603" H 5550 4650 60  0001 C CNN "Description"
+	1    5550 4650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7000 5250 7000 4800
+Wire Wire Line
+	7000 4800 7000 4400
+Connection ~ 7000 4800
+Wire Wire Line
+	7000 3650 7000 3200
+Wire Wire Line
+	7000 3200 7000 2800
+Wire Wire Line
+	7000 2800 7450 2800
+Wire Wire Line
+	7750 2800 8200 2800
+Connection ~ 8200 3200
+Connection ~ 7000 3200
+Connection ~ 7000 3650
+Connection ~ 7000 5250
+$Comp
+L Device:C C12
+U 1 1 5C0F1B37
+P 8000 1850
+F 0 "C12" H 8050 1750 50  0000 L CNN
+F 1 "10uF/10V" H 8050 1950 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 8038 1700 30  0001 C CNN
+F 3 "" H 8025 1950 60  0000 C CNN
+F 4 "478-10766-1-ND" H 8125 2050 60  0001 C CNN "Digikey"
+F 5 "CAP CER 10UF 10V X5R 0603" H 8125 2150 60  0001 C CNN "Description"
+	1    8000 1850
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:R R24
+U 1 1 5C0F1B40
+P 7700 1850
+F 0 "R24" V 7600 1850 50  0000 C CNN
+F 1 "10K" V 7800 1850 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 7630 1850 30  0001 C CNN
+F 3 "" H 7700 1850 30  0000 C CNN
+F 4 "P10.0KHCT-ND" V 7700 1850 60  0001 C CNN "Digikey"
+F 5 "RES 10.0K OHM 1/10W 1% 0603 SMD" V 7700 1850 60  0001 C CNN "Description"
+	1    7700 1850
+	1    0    0    -1  
+$EndComp
+Text Notes 7500 5950 0    60   ~ 0
+Mega Amp by ACE and Villahed94\nhttps://tinyurl.com/y83uxgvv
+Text Label 4700 4400 0    60   ~ 0
+PSG
+Text Notes 8600 3300 0    60   ~ 0
+Set C10 and C11 to 47pF if you are \na sadist who enjoys harsh trebly sound\n180pF = 3.684KHz LPF\n47pF  = 14.109KHz LPF\n27pF  = 24.561KHz LPF
+Text Notes 8475 4850 0    60   ~ 0
+Bypass the Mega Amp by \nDNP'ing the entire audio \nsection. Simply jumper the\naudio L and R signals \ndirectly onto the -ve pads \nof C14 and C15.
+Text Notes 4200 7300 0    60   ~ 0
+Notes:\n\n-75 ohm pulldowns on Sega CD & 32x \n can be omitted  if still present on console\n (required on 32x inputs if fitting a YM2612 \n in a VA0 to VA1.8 Genesis Model 2)\n\n-2.2K pulldown on YM inputs only required\n if fitting a YM2612 in a console with an \n ASIC YM3438.\n\n-R14 = 750 ohm for Model 2 VA2 & VA2.3
+Wire Wire Line
+	7000 3200 7450 3200
+Wire Wire Line
+	7750 3200 8200 3200
+Wire Wire Line
+	8200 3750 8350 3750
+Wire Wire Line
+	8650 3750 8950 3750
+Connection ~ 8200 3750
+Wire Wire Line
+	5950 4650 5700 4650
+Wire Wire Line
+	5700 4150 5950 4150
+Wire Wire Line
+	7800 4800 8200 4800
+Wire Wire Line
+	7000 4800 7500 4800
+Wire Wire Line
+	7500 4400 7000 4400
+Wire Wire Line
+	7800 4400 8200 4400
+Wire Wire Line
+	2750 2950 3000 2950
+Wire Wire Line
+	2750 4950 3000 4950
+Wire Wire Line
+	8200 3200 8200 3750
+Wire Wire Line
+	8200 2800 8200 3200
+Wire Wire Line
+	7850 3750 8200 3750
+Wire Wire Line
+	7000 3650 7250 3650
+$Comp
+L Amplifier_Operational:LMV358 U1
+U 1 1 5C0F1B7B
+P 7550 5350
+F 0 "U1" H 7650 5150 60  0000 C CNN
+F 1 "LMV358M8G-13" H 7850 5550 60  0000 C CNN
+F 2 "Package_SO:TSSOP-8_3x3mm_P0.65mm" H 7825 5875 60  0001 C CNN
+F 3 "https://www.diodes.com/assets/Datasheets/LMV321_358.pdf" H 8650 5800 60  0001 C CNN
+F 4 "LMV358M8G-13DITR-ND" H 7900 5600 60  0001 C CNN "Digikey"
+F 5 "IC OPAMP GP 1MHZ RRO 8MSOP" H 8000 5700 60  0001 C CNN "Description"
+	1    7550 5350
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	5400 4650 5250 4650
+Wire Wire Line
+	5250 4650 5250 4400
+Wire Wire Line
+	5250 4150 5400 4150
+Connection ~ 5250 4400
+Wire Wire Line
+	5250 4400 5250 4150
+Wire Wire Line
+	1950 3000 1950 2950
+Wire Wire Line
+	1950 5000 1950 4950
+Connection ~ 1950 4950
+Wire Wire Line
+	1950 4950 2450 4950
+Wire Wire Line
+	6800 3850 7250 3850
+Wire Wire Line
+	6800 5450 7250 5450
+Wire Wire Line
+	5050 4500 5050 4400
+$Comp
+L Device:C C?
+U 1 1 5C0F9CBC
+P 8850 1700
+AR Path="/5C0F9CBC" Ref="C?"  Part="1" 
+AR Path="/5C0ED7BB/5C0F9CBC" Ref="C13"  Part="1" 
+F 0 "C13" H 8900 1800 50  0000 L CNN
+F 1 "0.1uF/50V" H 8900 1600 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 8888 1550 30  0001 C CNN
+F 3 "" H 8850 1700 60  0000 C CNN
+F 4 "445-5666-1-ND" H 8850 1700 60  0001 C CNN "Digikey"
+F 5 "CAP CER 0.1UF 50V X7R 0603" H 8850 1700 60  0001 C CNN "Description"
+	1    8850 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:LMV358 U?
+U 3 1 5C0F9CCD
+P 9550 1700
+AR Path="/5C0F9CCD" Ref="U?"  Part="3" 
+AR Path="/5C0ED7BB/5C0F9CCD" Ref="U1"  Part="3" 
+F 0 "U1" H 9700 1950 60  0000 C CNN
+F 1 "LMV358M8G-13" H 9850 1450 60  0000 C CNN
+F 2 "Package_SO:TSSOP-8_3x3mm_P0.65mm" H 9825 2225 60  0001 C CNN
+F 3 "https://www.diodes.com/assets/Datasheets/LMV321_358.pdf" H 10650 2150 60  0001 C CNN
+F 4 "LMV358M8G-13DITR-ND" H 9900 1950 60  0001 C CNN "Digikey"
+F 5 "IC OPAMP GP 1MHZ RRO 8MSOP" H 10000 2050 60  0001 C CNN "Description"
+	3    9550 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9450 1100 9450 1300
+Wire Wire Line
+	9450 2000 9450 2100
+$Comp
+L power:GND #PWR?
+U 1 1 5C14A7CB
+P 9450 2150
+AR Path="/5C14A7CB" Ref="#PWR?"  Part="1" 
+AR Path="/5C1068D0/5C14A7CB" Ref="#PWR?"  Part="1" 
+AR Path="/5C0ED7BB/5C14A7CB" Ref="#PWR018"  Part="1" 
+F 0 "#PWR018" H 9450 1900 50  0001 C CNN
+F 1 "GND" H 9450 2000 50  0000 C CNN
+F 2 "" H 9450 2150 50  0001 C CNN
+F 3 "" H 9450 2150 50  0001 C CNN
+	1    9450 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5C14A7D1
+P 9450 1100
+AR Path="/5C14A7D1" Ref="#PWR?"  Part="1" 
+AR Path="/5C1068D0/5C14A7D1" Ref="#PWR?"  Part="1" 
+AR Path="/5C0ED7BB/5C14A7D1" Ref="#PWR017"  Part="1" 
+F 0 "#PWR017" H 9450 950 50  0001 C CNN
+F 1 "+5V" H 9450 1240 50  0000 C CNN
+F 2 "" H 9450 1100 50  0001 C CNN
+F 3 "" H 9450 1100 50  0001 C CNN
+	1    9450 1100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9450 1300 8850 1300
+Wire Wire Line
+	8850 1300 8850 1550
+Connection ~ 9450 1300
+Wire Wire Line
+	9450 1300 9450 1400
+Wire Wire Line
+	8850 1850 8850 2100
+Wire Wire Line
+	8850 2100 9450 2100
+Connection ~ 9450 2100
+Wire Wire Line
+	9450 2100 9450 2150
+Wire Wire Line
+	7000 5250 7250 5250
+Wire Wire Line
+	8200 4400 8200 4800
+Wire Wire Line
+	7850 5350 8200 5350
+Wire Wire Line
+	8200 4800 8200 5350
+Connection ~ 8200 4800
+Connection ~ 8200 5350
+Wire Wire Line
+	8200 5350 8350 5350
+Wire Wire Line
+	7700 1200 7700 1100
+Wire Wire Line
+	7700 1500 7700 1600
+Wire Wire Line
+	7700 2000 7700 2100
+Wire Wire Line
+	8000 1700 8000 1600
+Wire Wire Line
+	8000 1600 7700 1600
+Connection ~ 7700 1600
+Wire Wire Line
+	7700 1600 7700 1700
+Wire Wire Line
+	8000 2000 8000 2100
+Wire Wire Line
+	8000 2100 7700 2100
+Connection ~ 7700 2100
+Wire Wire Line
+	7700 2100 7700 2150
+Wire Wire Line
+	7700 1600 7300 1600
+Text Label 7400 1600 0    60   ~ 0
+2V5
+Text Label 6900 5450 0    60   ~ 0
+2V5
+Text Label 6900 3850 0    60   ~ 0
+2V5
+Text HLabel 9700 5350 2    60   Output ~ 0
+AUDIO_R_OUT
+Text HLabel 9700 3750 2    60   Output ~ 0
+AUDIO_L_OUT
+Wire Wire Line
+	9250 3750 9700 3750
+Wire Wire Line
+	8650 5350 8950 5350
+Wire Wire Line
+	9250 5350 9700 5350
+Text HLabel 1300 950  0    60   Input ~ 0
+YM-LEFT-IN
+Text HLabel 1300 2950 0    60   Input ~ 0
+SCD-LEFT-IN
+Text HLabel 1300 4950 0    60   Input ~ 0
+32X-LEFT-IN
+Text HLabel 4450 4400 0    60   Input ~ 0
+PSG-IN
+Text HLabel 1300 5950 0    60   Input ~ 0
+32X-RIGHT-IN
+Text HLabel 1300 3950 0    60   Input ~ 0
+SCD-RIGHT-IN
+Wire Wire Line
+	1300 4950 1950 4950
+$Comp
+L Device:R R12
+U 1 1 5C20F646
+P 3900 1500
+F 0 "R12" V 3800 1500 50  0000 C CNN
+F 1 "43K" V 4000 1500 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3830 1500 30  0001 C CNN
+F 3 "" H 3900 1500 30  0000 C CNN
+F 4 "P43.0KHCT-ND" V 3900 1500 60  0001 C CNN "Digikey"
+F 5 "RES 43.0K OHM 1/10W 1% 0603 SMD" V 3900 1500 60  0001 C CNN "Description"
+	1    3900 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R13
+U 1 1 5C20F6BA
+P 4300 1500
+F 0 "R13" V 4200 1500 50  0000 C CNN
+F 1 "56K" V 4400 1500 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 4230 1500 30  0001 C CNN
+F 3 "" H 4300 1500 30  0000 C CNN
+F 4 "P56.0KHCT-ND" V 4300 1500 60  0001 C CNN "Digikey"
+F 5 "RES 56.0K OHM 1/10W 1% 0603 SMD" V 4300 1500 60  0001 C CNN "Description"
+	1    4300 1500
+	1    0    0    -1  
+$EndComp
+Connection ~ 1950 2950
+Wire Wire Line
+	1950 2950 2450 2950
+Wire Wire Line
+	1300 2950 1950 2950
+$Comp
+L power:GND #PWR07
+U 1 1 5C25F312
+P 1950 1700
+F 0 "#PWR07" H 1950 1450 50  0001 C CNN
+F 1 "GND" H 1950 1550 50  0000 C CNN
+F 2 "" H 1950 1700 50  0001 C CNN
+F 3 "" H 1950 1700 50  0001 C CNN
+	1    1950 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1950 1350 1950 1300
+Wire Wire Line
+	1300 950  1950 950 
+Wire Wire Line
+	1950 1000 1950 950 
+Connection ~ 1950 950 
+Wire Wire Line
+	1950 950  2450 950 
+$Comp
+L Device:R R4
+U 1 1 5C2925CA
+P 1950 4150
+F 0 "R4" V 1850 4150 50  0000 C CNN
+F 1 "75R" V 2050 4150 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 1880 4150 30  0001 C CNN
+F 3 "" H 1950 4150 30  0000 C CNN
+F 4 "P75.0HCT-ND" V 1950 4150 60  0001 C CNN "Digikey"
+F 5 "RES 75.0 OHM 1/10W 1% 0603 SMD" V 1950 4150 60  0001 C CNN "Description"
+	1    1950 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R6
+U 1 1 5C2925D2
+P 1950 6150
+F 0 "R6" V 1850 6150 50  0000 C CNN
+F 1 "75R" V 2050 6150 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 1880 6150 30  0001 C CNN
+F 3 "" H 1950 6150 30  0000 C CNN
+F 4 "P75.0HCT-ND" V 1950 6150 60  0001 C CNN "Digikey"
+F 5 "RES 75.0 OHM 1/10W 1% 0603 SMD" V 1950 6150 60  0001 C CNN "Description"
+	1    1950 6150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R8
+U 1 1 5C2925DA
+P 3150 3950
+F 0 "R8" V 3250 3950 50  0000 C CNN
+F 1 "130K" V 3050 3950 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3080 3950 30  0001 C CNN
+F 3 "" H 3150 3950 30  0000 C CNN
+F 4 "P130KHCT-ND" V 3150 3950 60  0001 C CNN "Digikey"
+F 5 "RES 130K OHM 1/10W 1% 0603 SMD" V 3150 3950 60  0001 C CNN "Description"
+	1    3150 3950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R10
+U 1 1 5C2925E2
+P 3150 5950
+F 0 "R10" V 3250 5950 50  0000 C CNN
+F 1 "130K" V 3050 5950 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3080 5950 30  0001 C CNN
+F 3 "" H 3150 5950 30  0000 C CNN
+F 4 "P130KHCT-ND" V 3150 5950 60  0001 C CNN "Digikey"
+F 5 "RES 130K OHM 1/10W 1% 0603 SMD" V 3150 5950 60  0001 C CNN "Description"
+	1    3150 5950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C C4
+U 1 1 5C2925EA
+P 2600 3950
+F 0 "C4" V 2750 3950 50  0000 C CNN
+F 1 "1uF/16V" V 2450 3950 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 2638 3800 30  0001 C CNN
+F 3 "" H 2600 3950 60  0000 C CNN
+F 4 "445-1416-1-ND" H 2600 3950 60  0001 C CNN "Digikey"
+F 5 "CAP CER 1UF 16V X5R 0603" H 2600 3950 60  0001 C CNN "Description"
+	1    2600 3950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C C6
+U 1 1 5C2925F2
+P 2600 5950
+F 0 "C6" V 2750 5950 50  0000 C CNN
+F 1 "1uF/16V" V 2450 5950 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 2638 5800 30  0001 C CNN
+F 3 "" H 2600 5950 60  0000 C CNN
+F 4 "445-1416-1-ND" H 2600 5950 60  0001 C CNN "Digikey"
+F 5 "CAP CER 1UF 16V X5R 0603" H 2600 5950 60  0001 C CNN "Description"
+	1    2600 5950
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2750 3950 3000 3950
+Wire Wire Line
+	2750 5950 3000 5950
+$Comp
+L Device:R R16
+U 1 1 5C2A4035
+P 3500 2500
+F 0 "R16" V 3400 2500 50  0000 C CNN
+F 1 "6K19" V 3600 2500 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3430 2500 30  0001 C CNN
+F 3 "" H 3500 2500 30  0000 C CNN
+F 4 "P6.19KHCT-ND" V 3500 2500 60  0001 C CNN "Digikey"
+F 5 "RES 6.19K OHM 1/10W 1% 0603 SMD" V 3500 2500 60  0001 C CNN "Description"
+	1    3500 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R17
+U 1 1 5C2A403D
+P 3900 2500
+F 0 "R17" V 3800 2500 50  0000 C CNN
+F 1 "43K" V 4000 2500 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3830 2500 30  0001 C CNN
+F 3 "" H 3900 2500 30  0000 C CNN
+F 4 "P43.0KHCT-ND" V 3900 2500 60  0001 C CNN "Digikey"
+F 5 "RES 43.0K OHM 1/10W 1% 0603 SMD" V 3900 2500 60  0001 C CNN "Description"
+	1    3900 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R18
+U 1 1 5C2A4045
+P 4300 2500
+F 0 "R18" V 4200 2500 50  0000 C CNN
+F 1 "56K" V 4400 2500 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 4230 2500 30  0001 C CNN
+F 3 "" H 4300 2500 30  0000 C CNN
+F 4 "P56.0KHCT-ND" V 4300 2500 60  0001 C CNN "Digikey"
+F 5 "RES 56.0K OHM 1/10W 1% 0603 SMD" V 4300 2500 60  0001 C CNN "Description"
+	1    4300 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4450 4400 4550 4400
+Wire Wire Line
+	6400 5250 6400 4650
+Wire Wire Line
+	6400 4650 6250 4650
+Wire Wire Line
+	6400 5250 7000 5250
+Wire Wire Line
+	6250 4150 6400 4150
+Wire Wire Line
+	6400 4150 6400 3650
+Wire Wire Line
+	6400 3650 7000 3650
+$Comp
+L Device:R R2
+U 1 1 5C3070E0
+P 1950 2150
+F 0 "R2" V 1850 2150 50  0000 C CNN
+F 1 "2K2" V 2050 2150 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 1880 2150 30  0001 C CNN
+F 3 "" H 1950 2150 30  0000 C CNN
+F 4 "P2.20KHCT-ND" V 1950 2150 60  0001 C CNN "Digikey"
+F 5 "RES 2.20k OHM 1/10W 1% 0603 SMD" V 1950 2150 60  0001 C CNN "Description"
+	1    1950 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C2
+U 1 1 5C3070E8
+P 2600 1950
+F 0 "C2" V 2450 1950 50  0000 C CNN
+F 1 "10uF/10V" V 2750 1950 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 2638 1800 30  0001 C CNN
+F 3 "" H 2625 2050 60  0000 C CNN
+F 4 "478-10766-1-ND" H 2725 2150 60  0001 C CNN "Digikey"
+F 5 "CAP CER 10UF 10V X5R 0603" H 2725 2250 60  0001 C CNN "Description"
+	1    2600 1950
+	0    1    1    0   
+$EndComp
+Text HLabel 1300 1950 0    60   Input ~ 0
+YM-RIGHT-IN
+Connection ~ 6400 3650
+Wire Wire Line
+	6400 5250 5300 5250
+Connection ~ 6400 5250
+Wire Wire Line
+	5250 3650 6400 3650
+Text Label 3400 2950 0    60   ~ 0
+L-CH
+Text Label 3400 4950 0    60   ~ 0
+L-CH
+Wire Wire Line
+	3300 4950 3750 4950
+Wire Wire Line
+	3300 5950 3750 5950
+Wire Wire Line
+	3300 3950 3750 3950
+Wire Wire Line
+	3300 2950 3750 2950
+Text Label 4500 1700 0    60   ~ 0
+L-CH
+Text Label 3400 3950 0    60   ~ 0
+R-CH
+Text Label 3400 5950 0    60   ~ 0
+R-CH
+Text Label 5250 3650 0    60   ~ 0
+L-CH
+Text Label 5300 5250 0    60   ~ 0
+R-CH
+Text Notes 4900 2300 0    60   ~ 0
+6.19K = YM2612\n43K = GOAC YM3428\n56K = ASIC YM3438
+$Comp
+L Device:R R14
+U 1 1 5C4128A0
+P 4550 4650
+F 0 "R14" V 4450 4650 50  0000 C CNN
+F 1 "750R" V 4650 4650 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 4480 4650 30  0001 C CNN
+F 3 "" H 4550 4650 30  0000 C CNN
+F 4 "P750HCT-ND" V 4550 4650 60  0001 C CNN "Digikey"
+F 5 "RES SMD 750 OHM 1% 1/10W 0603" V 4550 4650 60  0001 C CNN "Description"
+	1    4550 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4550 4500 4550 4400
+$Comp
+L power:GND #PWR013
+U 1 1 5C4128A7
+P 4550 5250
+F 0 "#PWR013" H 4550 5000 50  0001 C CNN
+F 1 "GND" H 4550 5100 50  0000 C CNN
+F 2 "" H 4550 5250 50  0001 C CNN
+F 3 "" H 4550 5250 50  0001 C CNN
+	1    4550 5250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4550 5200 4550 5250
+$Comp
+L Jumper:SolderJumper_2_Open JP1
+U 1 1 5C102E90
+P 1950 1500
+F 0 "JP1" V 1950 1568 50  0000 L CNN
+F 1 "SolderJumper_3_Open" V 1905 1568 50  0001 L CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 1950 1500 50  0001 C CNN
+F 3 "~" H 1950 1500 50  0001 C CNN
+	1    1950 1500
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1950 1700 1950 1650
+$Comp
+L power:GND #PWR0101
+U 1 1 5C133EB6
+P 1950 3700
+F 0 "#PWR0101" H 1950 3450 50  0001 C CNN
+F 1 "GND" H 1950 3550 50  0000 C CNN
+F 2 "" H 1950 3700 50  0001 C CNN
+F 3 "" H 1950 3700 50  0001 C CNN
+	1    1950 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1950 3350 1950 3300
+Wire Wire Line
+	1950 3700 1950 3650
+$Comp
+L power:GND #PWR0102
+U 1 1 5C1660E6
+P 1950 5700
+F 0 "#PWR0102" H 1950 5450 50  0001 C CNN
+F 1 "GND" H 1950 5550 50  0000 C CNN
+F 2 "" H 1950 5700 50  0001 C CNN
+F 3 "" H 1950 5700 50  0001 C CNN
+	1    1950 5700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1950 5350 1950 5300
+Connection ~ 4550 4400
+Connection ~ 5050 4400
+Wire Wire Line
+	5050 4400 5250 4400
+Wire Wire Line
+	4550 4400 5050 4400
+Wire Wire Line
+	4550 4800 4550 4900
+Wire Wire Line
+	5050 4800 5050 4900
+$Comp
+L power:GND #PWR08
+U 1 1 5C14E33B
+P 1950 2700
+F 0 "#PWR08" H 1950 2450 50  0001 C CNN
+F 1 "GND" H 1950 2550 50  0000 C CNN
+F 2 "" H 1950 2700 50  0001 C CNN
+F 3 "" H 1950 2700 50  0001 C CNN
+	1    1950 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR09
+U 1 1 5C14E728
+P 1950 4700
+F 0 "#PWR09" H 1950 4450 50  0001 C CNN
+F 1 "GND" H 1950 4550 50  0000 C CNN
+F 2 "" H 1950 4700 50  0001 C CNN
+F 3 "" H 1950 4700 50  0001 C CNN
+	1    1950 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR010
+U 1 1 5C14EB23
+P 1950 6700
+F 0 "#PWR010" H 1950 6450 50  0001 C CNN
+F 1 "GND" H 1950 6550 50  0000 C CNN
+F 2 "" H 1950 6700 50  0001 C CNN
+F 3 "" H 1950 6700 50  0001 C CNN
+	1    1950 6700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1300 5950 1950 5950
+Wire Wire Line
+	1950 5650 1950 5700
+$Comp
+L Jumper:SolderJumper_2_Open JP2
+U 1 1 5C15A661
+P 1950 2500
+F 0 "JP2" V 1950 2568 50  0000 L CNN
+F 1 "SolderJumper_3_Open" V 1905 2568 50  0001 L CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 1950 2500 50  0001 C CNN
+F 3 "~" H 1950 2500 50  0001 C CNN
+	1    1950 2500
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1300 1950 1950 1950
+Wire Wire Line
+	1950 2700 1950 2650
+Wire Wire Line
+	1950 2350 1950 2300
+Wire Wire Line
+	1950 2000 1950 1950
+Connection ~ 1950 1950
+Wire Wire Line
+	1950 1950 2450 1950
+$Comp
+L Jumper:SolderJumper_2_Open JP3
+U 1 1 5C17EC29
+P 1950 3500
+F 0 "JP3" V 1950 3568 50  0000 L CNN
+F 1 "SolderJumper_3_Open" V 1905 3568 50  0001 L CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 1950 3500 50  0001 C CNN
+F 3 "~" H 1950 3500 50  0001 C CNN
+	1    1950 3500
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1300 3950 1950 3950
+Wire Wire Line
+	1950 4000 1950 3950
+Connection ~ 1950 3950
+Wire Wire Line
+	1950 3950 2450 3950
+$Comp
+L Jumper:SolderJumper_2_Open JP4
+U 1 1 5C18E934
+P 1950 4500
+F 0 "JP4" V 1950 4568 50  0000 L CNN
+F 1 "SolderJumper_3_Open" V 1905 4568 50  0001 L CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 1950 4500 50  0001 C CNN
+F 3 "~" H 1950 4500 50  0001 C CNN
+	1    1950 4500
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1950 4700 1950 4650
+Wire Wire Line
+	1950 4350 1950 4300
+$Comp
+L Jumper:SolderJumper_2_Open JP5
+U 1 1 5C1A41BC
+P 1950 5500
+F 0 "JP5" V 1950 5568 50  0000 L CNN
+F 1 "SolderJumper_3_Open" V 1905 5568 50  0001 L CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 1950 5500 50  0001 C CNN
+F 3 "~" H 1950 5500 50  0001 C CNN
+	1    1950 5500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Jumper:SolderJumper_2_Open JP6
+U 1 1 5C1AF170
+P 1950 6500
+F 0 "JP6" V 1950 6568 50  0000 L CNN
+F 1 "SolderJumper_3_Open" V 1905 6568 50  0001 L CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 1950 6500 50  0001 C CNN
+F 3 "~" H 1950 6500 50  0001 C CNN
+	1    1950 6500
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1950 6700 1950 6650
+Wire Wire Line
+	1950 6350 1950 6300
+Wire Wire Line
+	1950 6000 1950 5950
+Connection ~ 1950 5950
+Wire Wire Line
+	1950 5950 2450 5950
+Wire Wire Line
+	3500 950  3500 1000
+Wire Wire Line
+	2750 950  3500 950 
+Wire Wire Line
+	3500 950  3900 950 
+Wire Wire Line
+	3900 950  3900 1000
+Connection ~ 3500 950 
+Wire Wire Line
+	3900 950  4300 950 
+Wire Wire Line
+	4300 950  4300 1000
+Connection ~ 3900 950 
+Wire Wire Line
+	3500 1350 3500 1300
+$Comp
+L Jumper:SolderJumper_2_Open JP8
+U 1 1 5C1EE10D
+P 3500 1150
+F 0 "JP8" V 3500 1218 50  0000 L CNN
+F 1 "SolderJumper_3_Open" V 3455 1218 50  0001 L CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 3500 1150 50  0001 C CNN
+F 3 "~" H 3500 1150 50  0001 C CNN
+	1    3500 1150
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3500 1700 3500 1650
+Wire Wire Line
+	3900 1350 3900 1300
+$Comp
+L Jumper:SolderJumper_2_Open JP10
+U 1 1 5C1F34F9
+P 4300 1150
+F 0 "JP10" V 4300 1218 50  0000 L CNN
+F 1 "SolderJumper_3_Open" V 4255 1218 50  0001 L CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 4300 1150 50  0001 C CNN
+F 3 "~" H 4300 1150 50  0001 C CNN
+	1    4300 1150
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3900 1700 3900 1650
+Wire Wire Line
+	4300 1350 4300 1300
+$Comp
+L Jumper:SolderJumper_2_Open JP12
+U 1 1 5C1F8A05
+P 3900 2150
+F 0 "JP12" V 3900 2218 50  0000 L CNN
+F 1 "SolderJumper_3_Open" V 3855 2218 50  0001 L CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 3900 2150 50  0001 C CNN
+F 3 "~" H 3900 2150 50  0001 C CNN
+	1    3900 2150
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4300 1700 4300 1650
+Wire Wire Line
+	3500 1700 3900 1700
+Connection ~ 3900 1700
+Wire Wire Line
+	3900 1700 4300 1700
+Connection ~ 4300 1700
+Wire Wire Line
+	4300 1700 4850 1700
+Wire Wire Line
+	3500 1950 3500 2000
+Wire Wire Line
+	3500 1950 3900 1950
+Wire Wire Line
+	3900 1950 3900 2000
+Wire Wire Line
+	3900 1950 4300 1950
+Wire Wire Line
+	4300 1950 4300 2000
+Connection ~ 3900 1950
+Wire Wire Line
+	3500 1950 2750 1950
+Connection ~ 3500 1950
+Text Label 4500 2700 0    60   ~ 0
+R-CH
+Wire Wire Line
+	3500 2350 3500 2300
+$Comp
+L Jumper:SolderJumper_2_Open JP9
+U 1 1 5C21B92B
+P 3900 1150
+F 0 "JP9" V 3900 1218 50  0000 L CNN
+F 1 "SolderJumper_3_Open" V 3855 1218 50  0001 L CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 3900 1150 50  0001 C CNN
+F 3 "~" H 3900 1150 50  0001 C CNN
+	1    3900 1150
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3500 2700 3500 2650
+Wire Wire Line
+	3900 2350 3900 2300
+$Comp
+L Jumper:SolderJumper_2_Open JP11
+U 1 1 5C21B933
+P 3500 2150
+F 0 "JP11" V 3500 2218 50  0000 L CNN
+F 1 "SolderJumper_3_Open" V 3455 2218 50  0001 L CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 3500 2150 50  0001 C CNN
+F 3 "~" H 3500 2150 50  0001 C CNN
+	1    3500 2150
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3900 2700 3900 2650
+Wire Wire Line
+	4300 2350 4300 2300
+$Comp
+L Jumper:SolderJumper_2_Open JP13
+U 1 1 5C21B93B
+P 4300 2150
+F 0 "JP13" V 4300 2218 50  0000 L CNN
+F 1 "SolderJumper_3_Open" V 4255 2218 50  0001 L CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 4300 2150 50  0001 C CNN
+F 3 "~" H 4300 2150 50  0001 C CNN
+	1    4300 2150
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4300 2700 4300 2650
+Wire Wire Line
+	3500 2700 3900 2700
+Connection ~ 3900 2700
+Wire Wire Line
+	3900 2700 4300 2700
+Connection ~ 4300 2700
+Wire Wire Line
+	4300 2700 4850 2700
+$Comp
+L Jumper:SolderJumper_2_Open JP7
+U 1 1 5C2577D2
+P 4550 5050
+F 0 "JP7" V 4550 5118 50  0000 L CNN
+F 1 "SolderJumper_3_Open" V 4505 5118 50  0001 L CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 4550 5050 50  0001 C CNN
+F 3 "~" H 4550 5050 50  0001 C CNN
+	1    4550 5050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Jumper:SolderJumper_2_Open JP14
+U 1 1 5C257890
+P 5050 5050
+F 0 "JP14" V 5050 5118 50  0000 L CNN
+F 1 "SolderJumper_3_Open" V 5005 5118 50  0001 L CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 5050 5050 50  0001 C CNN
+F 3 "~" H 5050 5050 50  0001 C CNN
+	1    5050 5050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0103
+U 1 1 5C2629BB
+P 5050 5250
+F 0 "#PWR0103" H 5050 5000 50  0001 C CNN
+F 1 "GND" H 5050 5100 50  0000 C CNN
+F 2 "" H 5050 5250 50  0001 C CNN
+F 3 "" H 5050 5250 50  0001 C CNN
+	1    5050 5250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5050 5200 5050 5250
+$EndSCHEMATC
