@@ -423,13 +423,13 @@ Wire Wire Line
 Wire Wire Line
 	3200 4400 4100 4400
 $Comp
-L triple-bypass-rescue:MD-90SM-MD-90SM J1
+L triple-bypass-rescue:MD-90SM J1
 U 1 1 5C1617D3
 P 8000 2800
-F 0 "J1" H 7850 3500 50  0000 L CNN
-F 1 "MD-90SM" H 7800 2100 50  0000 L CNN
+F 0 "J1" H 8000 3450 50  0000 C BNN
+F 1 "MD-90SM" H 8000 2100 50  0000 C BNN
 F 2 "CUI_MD-90SM" H 8000 2800 50  0001 L BNN
-F 3 "http://www.cui.com/product/resource/digikeypdf/md-sm-series.pdf" H 8000 2800 50  0001 L BNN
+F 3 "https://www.cui.com/product/resource/digikeypdf/md-sm-series.pdf" H 8000 2800 50  0001 L BNN
 F 4 "CP-2290-ND" H 8000 2800 50  0001 L BNN "Digikey"
 F 5 "CONN RCPT FMALE MINI DIN 9P SLDR" H 8000 2800 50  0001 C CNN "Description"
 	1    8000 2800
