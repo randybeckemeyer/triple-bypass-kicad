@@ -1,12 +1,12 @@
 EESchema Schematic File Version 4
-LIBS:triple-bypass-cache
-EELAYER 26 0
+LIBS:triple-bypass-aio-cache
+EELAYER 29 0
 EELAYER END
 $Descr A 11000 8500
 encoding utf-8
 Sheet 3 3
-Title "Triple Bypass"
-Date "2018-12-16"
+Title "Triple Bypass AIO"
+Date "2019-03-23"
 Rev "0.4"
 Comp ""
 Comment1 "https://github.com/randybeckemeyer/triple-bypass-kicad"
@@ -233,21 +233,21 @@ F 3 "" H 1900 2325 50  0001 C CNN
 	1    1900 2325
 	1    0    0    -1  
 $EndComp
-Text Label 8300 2750 0    60   ~ 0
+Text Label 8300 2750 0    60   ~ 12
 SYNC-TTL
-Text Label 8300 2950 0    60   ~ 0
+Text Label 8300 2950 0    60   ~ 12
 SYNC-75
-Text Notes 6100 4850 0    60   ~ 0
+Text Notes 6100 4850 0    60   ~ 12
 Logic High on bypass disables \nthe internal filters, logic low \nenables them. Use slide switch \nto force internal filter.
-Text Notes 8250 3700 0    60   ~ 0
+Text Notes 8250 3700 0    60   ~ 12
 Select video level or\nTTL csync with slide switch
-Text Notes 750  2700 0    60   ~ 0
+Text Notes 750  2700 0    60   ~ 12
 0V to 5V signal \nswing on RGB \nfrom Genesis VDP
-Text Notes 3575 2775 0    60   ~ 0
+Text Notes 3325 2775 0    60   ~ 12
 0V to 755mV signal swing \nafter voltage divider
-Text Notes 1275 4125 0    60   ~ 0
+Text Notes 1275 4125 0    60   ~ 12
 CSYNC from Genesis VDP is \nopen collector output assuming \nthe mod has removed the \nGenesis' own 2.2k pull-up from \nthe signal path
-Text Notes 7600 2350 0    60   ~ 0
+Text Notes 7600 2350 0    60   ~ 12
 0V to 1510mV signal swing, 2 V/V
 Wire Wire Line
 	3650 4450 3850 4450
@@ -378,13 +378,11 @@ Wire Wire Line
 	5700 1800 5150 1800
 Wire Wire Line
 	5700 1750 5700 1800
-Text HLabel 6650 3250 2    60   Output ~ 0
+Text HLabel 6650 3250 2    60   Output ~ 12
 G-OUT
-Text HLabel 9650 2850 2    60   Output ~ 0
+Text HLabel 9650 2850 2    60   Output ~ 12
 SYNC-OUT
-Text HLabel 6650 3100 2    60   Output ~ 0
-R-OUT
-Text HLabel 6650 3400 2    60   Output ~ 0
+Text HLabel 6650 3400 2    60   Output ~ 12
 B-OUT
 Wire Wire Line
 	6150 3100 6650 3100
@@ -488,15 +486,15 @@ Wire Wire Line
 Wire Wire Line
 	8250 3300 9650 3300
 Connection ~ 8250 2950
-Text HLabel 9650 3300 2    60   Output ~ 0
+Text HLabel 9650 3300 2    60   Output ~ 12
 SYNC-75
-Text HLabel 1700 2950 0    60   Input ~ 0
+Text HLabel 1700 2950 0    60   Input ~ 12
 SYNC-IN
-Text HLabel 1700 3100 0    60   Input ~ 0
+Text HLabel 1700 3100 0    60   Input ~ 12
 R-IN
-Text HLabel 1700 3250 0    60   Input ~ 0
+Text HLabel 1700 3250 0    60   Input ~ 12
 G-IN
-Text HLabel 1700 3400 0    60   Input ~ 0
+Text HLabel 1700 3400 0    60   Input ~ 12
 B-IN
 Wire Wire Line
 	8050 2950 8250 2950
@@ -507,19 +505,6 @@ Wire Wire Line
 	1900 2950 2250 2950
 Wire Wire Line
 	1700 2950 1900 2950
-$Comp
-L triple-bypass-rescue:THS7374IPWR U2
-U 1 1 5C1707BA
-P 5150 2850
-F 0 "U2" H 5550 3239 60  0000 C CNN
-F 1 "THS7374IPWR" H 5550 3133 60  0000 C CNN
-F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 5575 3125 60  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/ths7374.pdf" H 6225 3225 60  0001 C CNN
-F 4 "296-41661-1-ND" H 5575 3325 60  0001 C CNN "Digikey"
-F 5 "IC SDTV VIDEO AMP 4-CH 14-TSSOP" H 6000 3425 60  0001 C CNN "Description"
-	1    5150 2850
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 5C17452F
@@ -550,4 +535,21 @@ Connection ~ 5700 1400
 Wire Wire Line
 	5700 1850 5700 1800
 Connection ~ 5700 1800
+$Comp
+L triple-bypass-aio-rescue:THS7374IPWR-triple-bypass-rescue U2
+U 1 1 5C1707BA
+P 5150 2850
+AR Path="/5C1707BA" Ref="U2"  Part="1" 
+AR Path="/5C1068D0/5C1707BA" Ref="U2"  Part="1" 
+F 0 "U2" H 5550 3239 60  0000 C CNN
+F 1 "THS7374IPWR" H 5550 3133 60  0000 C CNN
+F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 5575 3125 60  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/ths7374.pdf" H 6225 3225 60  0001 C CNN
+F 4 "296-41661-1-ND" H 5575 3325 60  0001 C CNN "Digikey"
+F 5 "IC SDTV VIDEO AMP 4-CH 14-TSSOP" H 6000 3425 60  0001 C CNN "Description"
+	1    5150 2850
+	1    0    0    -1  
+$EndComp
+Text HLabel 6650 3100 2    60   Output ~ 12
+R-OUT
 $EndSCHEMATC

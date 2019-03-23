@@ -1,12 +1,12 @@
 EESchema Schematic File Version 4
-LIBS:triple-bypass-cache
-EELAYER 26 0
+LIBS:triple-bypass-aio-cache
+EELAYER 29 0
 EELAYER END
 $Descr A 11000 8500
 encoding utf-8
 Sheet 2 3
-Title "Triple Bypass"
-Date "2018-12-16"
+Title "Triple Bypass AIO"
+Date "2019-03-23"
 Rev "0.4"
 Comp ""
 Comment1 "https://github.com/randybeckemeyer/triple-bypass-kicad"
@@ -391,15 +391,15 @@ F 5 "RES 10.0K OHM 1/10W 1% 0603 SMD" V 7700 1850 60  0001 C CNN "Description"
 	1    7700 1850
 	1    0    0    -1  
 $EndComp
-Text Notes 7500 5950 0    60   ~ 0
+Text Notes 7500 5950 0    60   ~ 12
 Mega Amp by ACE and Villahed94\nhttps://tinyurl.com/y83uxgvv
-Text Label 4700 4400 0    60   ~ 0
+Text Label 4700 4400 0    60   ~ 12
 PSG
-Text Notes 8600 3300 0    60   ~ 0
+Text Notes 8500 3300 0    60   ~ 12
 Set C10 and C11 to 47pF if you are \na sadist who enjoys harsh trebly sound\n180pF = 3.684KHz LPF\n47pF  = 14.109KHz LPF\n27pF  = 24.561KHz LPF
-Text Notes 8475 4850 0    60   ~ 0
+Text Notes 8475 4850 0    60   ~ 12
 Bypass the Mega Amp by \nDNP'ing the entire audio \nsection. Simply jumper the\naudio L and R signals \ndirectly onto the -ve pads \nof C14 and C15.
-Text Notes 4200 7300 0    60   ~ 0
+Text Notes 3750 7500 0    60   ~ 12
 Notes:\n\n-75 ohm pulldowns on Sega CD & 32x \n can be omitted  if still present on console\n (required on 32x inputs if fitting a YM2612 \n in a VA0 to VA1.8 Genesis Model 2)\n\n-2.2K pulldown on YM inputs only required\n if fitting a YM2612 in a console with an \n ASIC YM3438.\n\n-R14 = 750 ohm for Model 2 VA2 & VA2.3
 Wire Wire Line
 	7000 3200 7450 3200
@@ -579,15 +579,15 @@ Wire Wire Line
 	7700 2100 7700 2150
 Wire Wire Line
 	7700 1600 7300 1600
-Text Label 7400 1600 0    60   ~ 0
+Text Label 7400 1600 0    60   ~ 12
 2V5
-Text Label 6900 5450 0    60   ~ 0
+Text Label 6900 5450 0    60   ~ 12
 2V5
-Text Label 6900 3850 0    60   ~ 0
+Text Label 6900 3850 0    60   ~ 12
 2V5
-Text HLabel 9700 5350 2    60   Output ~ 0
+Text HLabel 9700 5350 2    60   Output ~ 12
 AUDIO_R_OUT
-Text HLabel 9700 3750 2    60   Output ~ 0
+Text HLabel 9700 3750 2    60   Output ~ 12
 AUDIO_L_OUT
 Wire Wire Line
 	9250 3750 9700 3750
@@ -595,17 +595,17 @@ Wire Wire Line
 	8650 5350 8950 5350
 Wire Wire Line
 	9250 5350 9700 5350
-Text HLabel 1300 950  0    60   Input ~ 0
+Text HLabel 1300 950  0    60   Input ~ 12
 YM-LEFT-IN
-Text HLabel 1300 2950 0    60   Input ~ 0
+Text HLabel 1300 2950 0    60   Input ~ 12
 SCD-LEFT-IN
-Text HLabel 1300 4950 0    60   Input ~ 0
+Text HLabel 1300 4950 0    60   Input ~ 12
 32X-LEFT-IN
-Text HLabel 4450 4400 0    60   Input ~ 0
+Text HLabel 4450 4400 0    60   Input ~ 12
 PSG-IN
-Text HLabel 1300 5950 0    60   Input ~ 0
+Text HLabel 1300 5950 0    60   Input ~ 12
 32X-RIGHT-IN
-Text HLabel 1300 3950 0    60   Input ~ 0
+Text HLabel 1300 3950 0    60   Input ~ 12
 SCD-RIGHT-IN
 Wire Wire Line
 	1300 4950 1950 4950
@@ -821,7 +821,7 @@ F 5 "CAP CER 10UF 10V X5R 0603" H 2725 2250 60  0001 C CNN "Description"
 	1    2600 1950
 	0    1    1    0   
 $EndComp
-Text HLabel 1300 1950 0    60   Input ~ 0
+Text HLabel 1300 1950 0    60   Input ~ 12
 YM-RIGHT-IN
 Connection ~ 6400 3650
 Wire Wire Line
@@ -829,9 +829,9 @@ Wire Wire Line
 Connection ~ 6400 5250
 Wire Wire Line
 	5250 3650 6400 3650
-Text Label 3400 2950 0    60   ~ 0
+Text Label 3400 2950 0    60   ~ 12
 L-CH
-Text Label 3400 4950 0    60   ~ 0
+Text Label 3400 4950 0    60   ~ 12
 L-CH
 Wire Wire Line
 	3300 4950 3750 4950
@@ -841,17 +841,17 @@ Wire Wire Line
 	3300 3950 3750 3950
 Wire Wire Line
 	3300 2950 3750 2950
-Text Label 4500 1700 0    60   ~ 0
+Text Label 4500 1700 0    60   ~ 12
 L-CH
-Text Label 3400 3950 0    60   ~ 0
+Text Label 3400 3950 0    60   ~ 12
 R-CH
-Text Label 3400 5950 0    60   ~ 0
+Text Label 3400 5950 0    60   ~ 12
 R-CH
-Text Label 5250 3650 0    60   ~ 0
+Text Label 5250 3650 0    60   ~ 12
 L-CH
-Text Label 5300 5250 0    60   ~ 0
+Text Label 5300 5250 0    60   ~ 12
 R-CH
-Text Notes 4900 2300 0    60   ~ 0
+Text Notes 4900 2300 0    60   ~ 12
 6.19K = YM2612\n43K = GOAC YM3428\n56K = ASIC YM3438
 $Comp
 L Device:R R14
@@ -1136,7 +1136,7 @@ Connection ~ 3900 1950
 Wire Wire Line
 	3500 1950 2750 1950
 Connection ~ 3500 1950
-Text Label 4500 2700 0    60   ~ 0
+Text Label 4500 2700 0    60   ~ 12
 R-CH
 Wire Wire Line
 	3500 2350 3500 2300
